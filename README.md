@@ -2,7 +2,7 @@
 
 Actividad 4, Tema 4. API REST pura en Spring Boot (sin vistas), con autenticación real mediante Spring Security y JWT, DTOs, validación con Bean Validation, y probada/documentada con Bruno.
 
-## 📌 Descripción del proyecto
+##  Descripción del proyecto
 
 - **Entidad principal:** `Mascota` que es la que use en la Actividad 3, relacionada con `Especie` (`@ManyToOne`)
 - **Autenticación:** registro y login con JWT real (`Usuario` con password encriptado con BCrypt)
@@ -27,5 +27,33 @@ Actividad 4, Tema 4. API REST pura en Spring Boot (sin vistas), con autenticaci�
 
 ## proyecto en la (VPS)
 
-- URL base: http://168.231.69.225:PUERTO_NUEVO
+- URL base: http://168.231.69.225:1024
 
+para pobrobar el proyecto en Bruno, se tiene que abrir la carpeta que dice bruno que esta junto a src, pom.xml, etc, que esta en este reposirio. Selecciona esa carpeta completa, no un archivo individual.
+
+en la opcion del vps en configuracion poner la direccion de la vps porque si no, no lo encontrara  http://168.231.69.225:1025
+
+
+![](img/configuracion.png)
+
+
+## prueba 1 registro
+![](img/p1.png.png)
+intento de registrar al mismo usuario 
+
+![](img/repetir_us.png)
+
+## pueba 2,   login
+![](img/p2.png)
+
+
+## pueba 3,   listar mascotas
+![](img/p3.png)
+
+## pueba 4,   crear mascota
+![](img/p4.png)
+
+
+
+## prueba 6, Actualizar mascota
+![](img/p6.png)
