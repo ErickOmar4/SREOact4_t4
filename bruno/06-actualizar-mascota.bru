@@ -1,0 +1,23 @@
+meta {
+  name: 06 - Actualizar mascota
+  type: http
+  seq: 6
+}
+
+put {
+  url: {{baseUrl}}/api/mascotas/{{mascotaId}}
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}
+
+body:json {
+  {
+    "nombre": "Firulais",
+    "edad": 4,
+    "especieId": 1
+  }
+}

@@ -1,0 +1,18 @@
+meta {
+  name: 01 - Registro
+  type: http
+  seq: 1
+}
+
+post {
+  url: {{baseUrl}}/api/auth/register
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "username": "usuario_prueba",
+    "password": "123456"
+  }
+}

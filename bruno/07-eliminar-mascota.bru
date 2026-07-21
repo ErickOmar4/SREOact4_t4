@@ -1,0 +1,15 @@
+meta {
+  name: 07 - Eliminar mascota
+  type: http
+  seq: 7
+}
+
+delete {
+  url: {{baseUrl}}/api/mascotas/{{mascotaId}}
+  body: none
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}

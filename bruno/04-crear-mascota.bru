@@ -1,0 +1,29 @@
+meta {
+  name: 04 - Crear mascota
+  type: http
+  seq: 4
+}
+
+post {
+  url: {{baseUrl}}/api/mascotas
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}
+
+body:json {
+  {
+    "nombre": "Firulais",
+    "edad": 3,
+    "especieId": 1
+  }
+}
+
+script:post-response {
+  if (res.body && res.body.id) {
+    bru.setVar("mascotaId", res.body.id);
+  }
+}
