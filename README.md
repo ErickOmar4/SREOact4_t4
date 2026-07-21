@@ -38,22 +38,41 @@ en la opcion del vps en configuracion poner la direccion de la vps porque si no,
 
 
 ## prueba 1 registro
-![](img/p1.png.png)
+metodo post
+http://168.231.69.225:1025/api/auth/register
+![](img/p1.png)
 intento de registrar al mismo usuario 
 
 ![](img/repetir_us.png)
 
 ## pueba 2,   login
+http://168.231.69.225:1025/api/auth/login
+
 ![](img/p2.png)
 
 
 ## pueba 3,   listar mascotas
+http://168.231.69.225:1025/api/mascotas?page=0&size=9
 ![](img/p3.png)
 
 ## pueba 4,   crear mascota
+post
+http://168.231.69.225:1025/api/mascotas
 ![](img/p4.png)
 
 
+## prueba 5
+get
+http://168.231.69.225:1025/api/mascotas/2
+![(img/p5.png)]
+
 
 ## prueba 6, Actualizar mascota
+put
+http://168.231.69.225:1025/api/mascotas/10
 ![](img/p6.png)
+
+## prueba 7, eliminar mascota
+delete
+http://168.231.69.225:1025/api/mascotas/10
+![](img/p7.png)

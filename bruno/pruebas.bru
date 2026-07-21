@@ -1,0 +1,16 @@
+meta {
+  name: pruebas
+  type: http
+  seq: 9
+}
+
+get {
+  url: {{baseUrl}}/api/mascotas/{{mascotaId}}
+  body: none
+  auth: inherit
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}
